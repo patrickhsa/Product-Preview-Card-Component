@@ -1,0 +1,133 @@
+body {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+
+    background: #f2ebe3;
+    width: 1440px;
+}
+
+.principal {
+    width: 700px;
+    position: fixed;
+    left: 30%;
+    top: 25%;       
+}
+
+.produto-imagem {
+    float: left;
+    width: 50%;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.texto {
+    background: #FFFFFF;
+    width: 50%;
+    height: 450px;
+    display: inline-block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.perfume {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 40px 0 30px 40px;    
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.nome-perfume {
+    padding: 0 80px 30px 40px;
+    font-family: 'Fraunces', serif;
+    text-align: left;
+    font-size: 30px;
+}
+
+.descricao-perfume {
+    padding: 0 40px 30px 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 25px;
+    opacity: 0.5;
+}
+
+.preco {
+    display: inline-flex;
+}
+
+.preco-atual {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: #3c8067;
+    padding: 0 0 0 40px;
+}
+
+.preco-antigo {
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 0 0 20px;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+button {
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 70%;
+    background: #3c8067;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 2px solid #3c8067;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #18342a;    
+}
+
+button span {
+    padding-left: 10px;    
+}
+
+footer {
+    position: absolute;
+    bottom: 1em;
+    left: 40%;    
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: auto;        
+    }
+
+    .principal {
+        top: 2%;
+        left: 7%;
+    }
+
+    .produto-imagem {
+        float: none;
+        background-image: url('image-product-mobile.jpg');
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }   
+
+    .texto {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .perfume {
+        padding: 20px 0 30px 40px;
+    }
+}
